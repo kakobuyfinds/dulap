@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#172b35">
+  <title>DgoBuy spreadsheet: categorías, tallas y guía de selección</title>
+  <meta name="description" content="Explora DgoBuy spreadsheet en español: categorías de moda, consejos para comparar tallas, revisar fotos QC y preparar tu selección antes de comprar.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="DgoBuy spreadsheet · Elige con criterio">
+  <meta property="og:description" content="Una guía independiente para explorar categorías, comparar medidas y revisar los detalles que importan. Continúa tu búsqueda en cafans.com.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="DgoBuy spreadsheet · Guía en español">
+  <meta name="twitter:description" content="Calzado, ropa y accesorios: una ruta clara para comparar opciones antes de comprar.">
+  <link rel="preconnect" href="https://static.nike.com">
+  <link rel="dns-prefetch" href="//media.christiandior.com">
+  <link rel="dns-prefetch" href="//content.stylitics.com">
+
+  <!--
+    Archivo: index.html
+    Investigación: resultados web relacionados; no se ha podido verificar
+    una primera página de Google ni su orden geográfico de posiciones.
+    Muestra de diez dominios consultados mediante resultados de búsqueda:
+    https://dgo-buy.com/
+    https://dgosheets.com/
+    https://mixfittio.com/en/spreadsheet/dgobuy
+    https://qcradar.com/dgobuy-spreadsheet
+    https://yupoo.tips/dgobuy-spreadsheet
+    https://kakobuyde.net/dgobuy-spreadsheet
+    https://bbd-buy.org/dgobuy-spreadsheet
+    https://sugargoous.com/dgobuy-spreadsheet
+    https://sugargoo.tips/dgobuy-spreadsheet
+    https://cnfanssheet.com/dgobuy-spreadsheet
+
+    Temas observados: categorías, enlaces de productos, comparación,
+    medidas, fotos QC, variantes y preparación del envío.
+    No se reproducen afirmaciones comerciales, tarifas ni reseñas de esas páginas.
+
+    Cuatro términos secundarios:
+    guía DgoBuy spreadsheet; categorías DgoBuy; DgoBuy finds;
+    fotos QC DgoBuy.
+
+    Treinta consultas de intención desarrolladas en el contenido:
+    cómo usar DgoBuy spreadsheet; DgoBuy spreadsheet en español;
+    buscar zapatillas por categoría; comparar tallas de zapatillas;
+    medir la longitud del pie; revisar la tabla del vendedor;
+    comparar sudaderas por medidas; elegir un jersey de punto;
+    comprobar el largo de camiseta; comparar el ancho de pecho;
+    revisar el forro de chaqueta; comprobar cremalleras y cierres;
+    medir cintura de pantalón; comparar el tiro de pantalón;
+    elegir el largo de shorts; comprobar la circunferencia de gorra;
+    revisar bordados de gorra; comparar medidas de conjuntos;
+    elegir ropa interior por talla; revisar composición de prendas;
+    comparar camisetas deportivas; comprobar estampados de jersey;
+    revisar dimensiones de accesorios; comprobar cierres de joyería;
+    interpretar fotos QC; revisar costuras en fotografías;
+    comparar variantes del producto; comprobar disponibilidad actual;
+    preparar una lista de compra; calcular el coste total del pedido.
+
+    Las imágenes son referencias editoriales externas, no inventario.
+    Añadir una URL canónica propia solamente cuando se conozca
+    la dirección definitiva de publicación.
+  -->
+
+  <style>
+    :root{
+      --ink:#172b35;
+      --paper:#f5f3eb;
+      --white:#fffef9;
+      --muted:#52636b;
+      --line:#d5d9d3;
+      --yellow:#f2cf62;
+      --teal:#245c5b;
+      --radius:18px;
+      color-scheme:light;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-underline-offset:4px}
+    a:hover{text-decoration-thickness:2px}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:5px}
+    img{display:block;max-width:100%;height:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    h1{font-size:clamp(2.65rem,6.4vw,5.7rem);letter-spacing:-.065em;max-width:850px}
+    h2{font-size:clamp(1.8rem,3.2vw,2.8rem);letter-spacing:-.045em}
+    h3{font-size:1.24rem;letter-spacing:-.025em}
+    p{max-width:70ch}
+    .wrap{width:min(1180px,calc(100% - 40px));margin-inline:auto}
+    .masthead{border-bottom:1px solid var(--line)}
+    .masthead .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:20px}
+    .logo{font-weight:900;font-size:1.55rem;letter-spacing:-.06em;text-decoration:none;white-space:nowrap}
+    .masthead small{color:var(--muted)}
+    .top-link{font-size:.88rem;font-weight:700}
+    .intro{padding-block:32px 26px}
+    .eyebrow{font-size:.75rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+    .intro p{margin-top:22px;font-size:1.08rem;color:var(--muted)}
+    .categories{padding:24px;background:var(--ink);color:var(--white);border-radius:var(--radius)}
+    .category-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-bottom:17px}
+    .category-head h2{font-size:1.25rem;letter-spacing:-.02em}
+    .category-head span{font-size:.8rem;color:#c4d3d7}
+    .category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+    .category-grid a{min-height:67px;display:flex;align-items:center;gap:10px;padding:12px;background:#263e49;border:1px solid #425762;border-radius:9px;text-decoration:none;font-size:.84rem;font-weight:650;overflow-wrap:anywhere}
+    .category-grid a:hover{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
+    .category-grid i{font-style:normal;font-size:.67rem;opacity:.7}
+    .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:stretch;margin-block:28px 60px}
+    .hero-copy{padding:32px;background:var(--yellow);border-radius:var(--radius);display:flex;flex-direction:column;justify-content:center}
+    .hero-copy h2{max-width:12ch}
+    .hero-copy p{margin-top:20px}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:16px;padding:13px 20px;background:var(--ink);color:white;border-radius:8px;font-size:.9rem;font-weight:750;text-decoration:none;min-height:48px;width:fit-content}
+    .button:hover{background:var(--teal)}
+    .hero-copy .button{margin-top:25px}
+    .hero-photo{background:#e9eaE6;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+    .hero-photo img{width:100%;aspect-ratio:1.35;object-fit:contain;background:#f4f4f4}
+    figcaption{padding:14px 18px;font-size:.78rem;color:var(--muted)}
+    .section{margin-block:58px}
+    .section-head{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:end;margin-bottom:25px}
+    .section-head p{color:var(--muted)}
+    .answer{border-left:4px solid var(--teal);padding:18px 24px;background:var(--white);margin-bottom:28px}
+    .answer strong{display:block;margin-bottom:7px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{border-top:1px solid var(--ink);padding-top:18px}
+    .step-number{color:var(--teal);font-size:.8rem;font-weight:800;display:block;margin-bottom:16px}
+    .step p{margin-top:12px;color:var(--muted);font-size:.94rem}
+    .editorial{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .editorial figure{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .editorial img{width:100%;height:290px;object-fit:contain;background:#eeefeb}
+    .editorial figcaption{padding:21px}
+    .editorial h3{color:var(--ink);margin-bottom:10px}
+    .editorial p{font-size:.9rem}
+    .editorial a{display:inline-block;margin-top:15px;font-size:.84rem;font-weight:750;color:var(--teal)}
+    .note{font-size:.8rem;color:var(--muted);margin-top:14px}
+    .table-box{border:1px solid var(--line);border-radius:var(--radius);overflow:auto;background:var(--white)}
+    table{border-collapse:collapse;width:100%;min-width:620px;text-align:left;font-size:.9rem}
+    caption{text-align:left;padding:19px 22px;font-weight:750;font-size:1rem}
+    th,td{padding:16px 22px;border-top:1px solid var(--line);vertical-align:top}
+    thead th{background:#e9eee8;font-size:.77rem;text-transform:uppercase;letter-spacing:.05em}
+    tbody th{width:25%;font-weight:700}
+    td{color:var(--muted)}
+    .journal{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px}
+    .journal-intro{border-top:5px solid var(--yellow);padding-top:22px}
+    .journal-intro p{margin-top:16px;color:var(--muted)}
+    .article{padding:24px 0;border-top:1px solid var(--line)}
+    .article:first-child{padding-top:0;border-top:0}
+    .article .label{font-size:.73rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:750;margin-bottom:9px}
+    .article p{margin-top:12px;color:var(--muted);font-size:.94rem}
+    .article a{display:inline-block;margin-top:13px;font-weight:750;font-size:.86rem}
+    .faq-layout{display:grid;grid-template-columns:.65fr 1.35fr;gap:40px}
+    details{border-top:1px solid var(--line);padding:19px 0}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:750;padding-right:12px;line-height:1.5}
+    details p{margin-top:13px;color:var(--muted);font-size:.94rem}
+    .closing{display:flex;justify-content:space-between;align-items:center;gap:30px;background:var(--teal);color:white;padding:32px;border-radius:var(--radius);margin-bottom:45px}
+    .closing h2{font-size:1.8rem}
+    .closing p{margin-top:10px;color:#e1eeee}
+    .closing .button{flex-shrink:0;background:var(--yellow);color:var(--ink)}
+    footer{border-top:1px solid var(--line);padding-block:25px 35px}
+    footer .wrap{display:flex;justify-content:space-between;align-items:start;gap:30px}
+    footer p{font-size:.76rem;color:var(--muted);max-width:90ch}
+    @media(min-width:1500px){.wrap{width:min(1280px,calc(100% - 80px))}}
+    @media(max-width:900px){
+      .category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .hero{gap:18px}
+      .hero-copy{padding:25px}
+      .editorial img{height:230px}
+      .journal,.faq-layout{grid-template-columns:1fr;gap:25px}
+    }
+    @media(max-width:620px){
+      .wrap{width:calc(100% - 28px)}
+      .masthead .wrap{padding-block:15px}
+      .masthead small{display:none}
+      .intro{padding-top:26px}
+      .intro p{font-size:1rem}
+      .categories{padding:17px}
+      .category-head{display:block}
+      .category-head span{display:block;margin-top:6px}
+      .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .category-grid a{font-size:.79rem;min-height:59px;padding:10px}
+      .hero,.section-head,.steps,.editorial{grid-template-columns:1fr}
+      .hero{margin-bottom:42px}
+      .hero-copy h2{max-width:20ch}
+      .hero-photo img{aspect-ratio:1.4}
+      .section{margin-block:42px}
+      .section-head{gap:15px}
+      .steps{gap:25px}
+      .editorial img{height:280px}
+      .closing{display:block;padding:25px}
+      .closing .button{margin-top:22px}
+      footer .wrap{display:block}
+      footer p{margin-top:15px}
+    }
+    @media(prefers-reduced-motion:no-preference){
+      .button,.category-grid a{transition:background-color .15s ease,color .15s ease}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"CollectionPage",
+        "name":"DgoBuy spreadsheet: categorías, tallas y guía de selección",
+        "description":"Guía independiente en español para explorar categorías de moda, comparar medidas y revisar fotografías antes de continuar en cafans.com.",
+        "inLanguage":"es",
+        "about":{"@type":"Thing","name":"DgoBuy spreadsheet"},
+        "hasPart":[
+          {
+            "@type":"Article",
+            "headline":"Cómo comparar tallas sin depender de una letra",
+            "inLanguage":"es",
+            "articleBody":"Para comparar tallas de zapatillas, mide la longitud del pie y revisa la tabla del vendedor para el modelo concreto. En ropa, compara el ancho de pecho y el largo con una prenda que ya te quede bien. Comprueba si la tabla expresa medidas del cuerpo o de la prenda."
+          },
+          {
+            "@type":"Article",
+            "headline":"Fotos QC: qué revisar y qué sigue sin resolverse",
+            "inLanguage":"es",
+            "articleBody":"Al interpretar fotos QC, empieza por la variante: color, talla y cantidad. Después revisa costuras, simetría, estampados y cierres. Pide una imagen cercana o una medida cuando falte información. Una fotografía no demuestra por sí sola la autenticidad, la composición o la durabilidad."
+          },
+          {
+            "@type":"Article",
+            "headline":"Del enlace guardado al presupuesto completo",
+            "inLanguage":"es",
+            "articleBody":"Para preparar una lista de compra, guarda la referencia, la variante, las medidas y las dudas pendientes. Antes de pagar, comprueba disponibilidad actual y calcula el coste total del pedido con los cargos que correspondan. Confirma las condiciones de devolución y el importe final en el servicio que gestione la compra."
+          }
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"es",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"¿Qué es una DgoBuy spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"El término se utiliza para buscar listas o directorios de enlaces relacionados con productos y compras mediante DgoBuy. Esta página es una guía editorial independiente: organiza categorías y consejos de comparación, y sus enlaces de catálogo llevan a cafans.com."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Cómo uso esta guía DgoBuy spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Elige una de las diez categorías, abre el catálogo correspondiente y compara el producto exacto. Revisa medidas, variante, fotografías y condiciones antes de decidir."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Las imágenes confirman que un producto está disponible?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No. Las imágenes son referencias editoriales de estilo. No confirman inventario, precio ni disponibilidad en cafans.com; comprueba esos datos en la ficha actual."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Las fotos QC demuestran autenticidad?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No. Ayudan a observar detalles visibles, pero no sustituyen una verificación de procedencia ni demuestran por sí solas la autenticidad, el material o la durabilidad."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Puedo usar la misma talla en todas las marcas?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No conviene asumirlo. Compara tus medidas con la tabla del modelo concreto y comprueba cómo se han tomado. Una misma letra o numeración puede corresponder a medidas diferentes."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Esta página es oficial de DgoBuy o de las marcas?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No. Es una guía independiente, sin afiliación oficial declarada con DgoBuy, Nike, Louis Vuitton, Gucci, Hermès o Dior. Las marcas pertenecen a sus respectivos titulares."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/dulap/">
+</head>
+
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="logo" href="https://www.cafans.com" aria-label="Ir a cafans.com">cafans.com</a>
+      <small>Cuaderno de selección · En español</small>
+      <a class="top-link" href="https://www.cafans.com">Abrir catálogo ↗</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow">Moda cotidiana / Una selección con criterio</div>
+      <h1 id="page-title">DgoBuy spreadsheet</h1>
+      <p>Empieza por la categoría. Sigue por las medidas. Decide con información. Una guía independiente para explorar calzado, ropa y accesorios sin perder de vista los detalles.</p>
+    </section>
+
+    <nav class="categories" aria-label="Categorías de productos">
+      <div class="category-head">
+        <h2>Tu punto de partida</h2>
+        <span>10 categorías · Acceso directo al catálogo</span>
+      </div>
+      <div class="category-grid">
+        <a href="https://cafans.com/category-911-Shoes.html"><i aria-hidden="true">01</i><span>Shoes · Calzado</span></a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html"><i aria-hidden="true">02</i><span>Hoodies/Sweaters · Sudaderas y jerséis</span></a>
+        <a href="https://cafans.com/category-913-T-Shirts.html"><i aria-hidden="true">03</i><span>T-Shirts · Camisetas</span></a>
+        <a href="https://cafans.com/category-914-Jackets.html"><i aria-hidden="true">04</i><span>Jackets · Chaquetas</span></a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html"><i aria-hidden="true">05</i><span>Pants/Shorts · Pantalones y shorts</span></a>
+        <a href="https://cafans.com/category-916-Headwear.html"><i aria-hidden="true">06</i><span>Headwear · Gorras y gorros</span></a>
+        <a href="https://cafans.com/category-917-Sets.html"><i aria-hidden="true">07</i><span>Sets · Conjuntos</span></a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html"><i aria-hidden="true">08</i><span>Underwear/underpants · Ropa interior</span></a>
+        <a href="https://cafans.com/category-919-Jersey.html"><i aria-hidden="true">09</i><span>Jersey · Camisetas deportivas</span></a>
+        <a href="https://cafans.com/category-920-Accessories.html"><i aria-hidden="true">10</i><span>Accessories · Accesorios</span></a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">Menos dudas, mejores comparaciones</div>
+        <h2 id="hero-title">El estilo se ve.<br>El ajuste se comprueba.</h2>
+        <p>Una foto puede iniciar una búsqueda. La longitud, el corte y la variante exacta son los datos que ayudan a terminarla. Usa este cuaderno antes de elegir tu próxima prenda.</p>
+        <a class="button" href="https://www.cafans.com">Explorar en cafans.com <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="hero-photo">
+        <img
+          src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,q_auto:eco/e6da41fa-1be4-4ce5-b89c-22be4f1f02d4/AIR%2BFORCE%2B1%2B%2707.png"
+          alt="Zapatilla Nike Air Force 1 '07 blanca, referencia visual de calzado de perfil bajo."
+          width="864"
+          height="1080"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async">
+        <figcaption>Nike Air Force 1 ’07 · Referencia visual; consulta el catálogo para conocer su contenido actual.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="method-title">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">La ruta de selección</div>
+          <h2 id="method-title">Cómo usar esta guía</h2>
+        </div>
+        <p>Si buscas una DgoBuy spreadsheet en español, empieza con una necesidad concreta: qué prenda quieres, cómo debe quedarte y qué información te falta.</p>
+      </div>
+      <div class="answer">
+        <strong>Respuesta rápida</strong>
+        <p>Elige una categoría, compara medidas y fotografías de la variante exacta, y confirma la ficha actual antes de comprar. Los accesos de esta página continúan en cafans.com.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <span class="step-number">01 / DELIMITA</span>
+          <h3>Busca por tipo de prenda</h3>
+          <p>Buscar zapatillas por categoría o empezar por chaquetas reduce el ruido. Para tus DgoBuy finds, anota primero uso, color y ajuste deseado.</p>
+        </article>
+        <article class="step">
+          <span class="step-number">02 / CONTRASTA</span>
+          <h3>Compara lo comparable</h3>
+          <p>No mezcles precios de variantes distintas. Revisa la tabla del vendedor, las imágenes y la descripción del mismo modelo, talla y acabado.</p>
+        </article>
+        <article class="step">
+          <span class="step-number">03 / CONFIRMA</span>
+          <h3>Resuelve el dato pendiente</h3>
+          <p>Si falta una medida o un detalle de construcción, solicita información antes de pagar. La ausencia de datos no demuestra que el producto cumpla tus expectativas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visual-title">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Tres formas de mirar</div>
+          <h2 id="visual-title">Del conjunto al detalle</h2>
+        </div>
+        <p>Usa estas referencias para pensar en proporción, textura y acabado. Después comprueba qué ofrece realmente cada ficha del catálogo.</p>
+      </div>
+
+      <div class="editorial">
+        <figure>
+          <img
+            src="https://content.stylitics.com/images/items/21024984"
+            alt="Sudadera Nike Sportswear Club Fleece con capucha, referencia para comparar corte y proporciones."
+            width="600"
+            height="700"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>La proporción de una capa</h3>
+            <p>Para comparar sudaderas por medidas, revisa hombros, pecho y largo. Al elegir un jersey de punto, comprueba también la composición y las instrucciones de cuidado.</p>
+            <a href="https://www.cafans.com">Buscar prendas en el catálogo ↗</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://content.stylitics.com/images/items/20969024"
+            alt="Gorro Nike Peak Swoosh, referencia visual de prenda de punto para la cabeza."
+            width="600"
+            height="700"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>El ajuste del accesorio</h3>
+            <p>En una gorra, comprueba la circunferencia y revisa los bordados. En un gorro de punto, pregunta por la profundidad, la elasticidad y la composición.</p>
+            <a href="https://www.cafans.com">Explorar complementos ↗</a>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="https://media.christiandior.com/cdn-cgi/image/width=800,format=auto,quality=75/pm_11872_1503_1503564-jl6mk3ivqq-whr.jpg"
+            alt="Imagen editorial de Dior dedicada a las formas de llevar un pañuelo Mitzah."
+            width="800"
+            height="1000"
+            loading="lazy"
+            decoding="async">
+          <figcaption>
+            <h3>Un detalle cambia el conjunto</h3>
+            <p>En pañuelos y accesorios, revisa dimensiones, bordes y material declarado. Una imagen de estilo ayuda a imaginar el uso, pero no certifica la composición.</p>
+            <a href="https://www.cafans.com">Consultar accesorios ↗</a>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="note">Imágenes editoriales externas de Nike y Dior. No representan una selección de productos verificada en cafans.com ni implican colaboración con las marcas.</p>
+    </section>
+
+    <section class="section" aria-labelledby="checks-title">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Categorías DgoBuy / Criterios prácticos</div>
+          <h2 id="checks-title">Qué revisar en cada ficha</h2>
+        </div>
+        <p>El dato decisivo cambia según el producto. Esta tabla te ayuda a identificarlo antes de comparar alternativas.</p>
+      </div>
+
+      <div class="table-box" role="region" aria-label="Tabla de criterios de selección" tabindex="0">
+        <table>
+          <caption>Una comprobación útil para cada categoría</caption>
+          <thead>
+            <tr>
+              <th scope="col">Categoría</th>
+              <th scope="col">Comprueba</th>
+              <th scope="col">Pregunta útil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Calzado</th>
+              <td>Longitud del pie, tabla del modelo, anchura y vistas de la suela.</td>
+              <td>¿La medida indicada corresponde al pie o al interior del calzado?</td>
+            </tr>
+            <tr>
+              <th scope="row">Sudaderas y jerséis</th>
+              <td>Ancho de pecho, largo, hombros y composición de las prendas.</td>
+              <td>¿Las medidas se toman con la prenda extendida y sin estirar?</td>
+            </tr>
+            <tr>
+              <th scope="row">Camisetas</th>
+              <td>Largo de camiseta, ancho de pecho y colocación del estampado.</td>
+              <td>¿El corte es recto, corto o amplio según sus medidas reales?</td>
+            </tr>
+            <tr>
+              <th scope="row">Chaquetas</th>
+              <td>Forro de chaqueta, espacio para capas, cremalleras y cierres.</td>
+              <td>¿Hay fotografías del interior y de los cierres abiertos?</td>
+            </tr>
+            <tr>
+              <th scope="row">Pantalones y shorts</th>
+              <td>Cintura de pantalón, tiro, entrepierna y largo de shorts.</td>
+              <td>¿La cintura indicada está relajada o estirada?</td>
+            </tr>
+            <tr>
+              <th scope="row">Gorras y gorros</th>
+              <td>Circunferencia, profundidad, ajuste y bordados de gorra.</td>
+              <td>¿Qué rango de contorno permite el cierre?</td>
+            </tr>
+            <tr>
+              <th scope="row">Conjuntos</th>
+              <td>Medidas de conjuntos por separado para la parte superior e inferior.</td>
+              <td>¿Ambas prendas tienen tabla propia y el mismo criterio de talla?</td>
+            </tr>
+            <tr>
+              <th scope="row">Ropa interior</th>
+              <td>Talla, composición, elasticidad y condiciones de devolución.</td>
+              <td>¿Hay restricciones de devolución por motivos de higiene?</td>
+            </tr>
+            <tr>
+              <th scope="row">Camisetas deportivas</th>
+              <td>Medidas, tejido, versión y estampados de jersey.</td>
+              <td>¿La fotografía corresponde a la versión que voy a seleccionar?</td>
+            </tr>
+            <tr>
+              <th scope="row">Accesorios y joyería</th>
+              <td>Dimensiones de accesorios, material declarado y cierres de joyería.</td>
+              <td>¿Se indican longitud, peso y componentes en contacto con la piel?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section journal" aria-labelledby="journal-title">
+      <div class="journal-intro">
+        <div class="eyebrow">Cuaderno de compra</div>
+        <h2 id="journal-title">Tres lecturas antes de elegir</h2>
+        <p>Una guía DgoBuy spreadsheet resulta más útil cuando transforma una imagen atractiva en preguntas concretas.</p>
+        <p>Si buscas Nike, Louis Vuitton, Gucci, Hermès o Dior, comprueba siempre la referencia exacta y la procedencia. Un nombre de marca en un título no demuestra autenticidad.</p>
+      </div>
+
+      <div>
+        <article class="article">
+          <div class="label">Guía 01 · Tallas</div>
+          <h3>Cómo comparar tallas sin depender de una letra</h3>
+          <p>Para comparar tallas de zapatillas, mide la longitud del pie y revisa la tabla del vendedor para el modelo concreto. En ropa, compara el ancho de pecho y el largo con una prenda que ya te quede bien. Comprueba si la tabla expresa medidas del cuerpo o de la prenda.</p>
+          <p>Si buscas un ajuste holgado, decide cuánto espacio quieres a partir de esas medidas. Elegir una talla más grande sin revisar el patrón puede cambiar también hombros, mangas y largo.</p>
+          <a href="https://www.cafans.com">Continuar la selección en cafans.com ↗</a>
+        </article>
+
+        <article class="article">
+          <div class="label">Guía 02 · Fotografías</div>
+          <h3>Fotos QC: qué revisar y qué sigue sin resolverse</h3>
+          <p>Al interpretar fotos QC, empieza por la variante: color, talla y cantidad. Después revisa costuras, simetría, estampados y cierres. Pide una imagen cercana o una medida cuando falte información. Una fotografía no demuestra por sí sola la autenticidad, la composición o la durabilidad.</p>
+          <p>Si buscas fotos QC DgoBuy, comprueba además que pertenecen al artículo y a la variante que estás evaluando. La iluminación puede alterar el color; solicita otra vista si ese detalle afecta a tu decisión.</p>
+          <a href="https://www.cafans.com">Revisar las fichas del catálogo ↗</a>
+        </article>
+
+        <article class="article">
+          <div class="label">Guía 03 · Presupuesto</div>
+          <h3>Del enlace guardado al presupuesto completo</h3>
+          <p>Para preparar una lista de compra, guarda la referencia, la variante, las medidas y las dudas pendientes. Antes de pagar, comprueba disponibilidad actual y calcula el coste total del pedido con los cargos que correspondan. Confirma las condiciones de devolución y el importe final en el servicio que gestione la compra.</p>
+          <p>Compara variantes del producto antes de comparar importes. Anota por separado producto, transporte y cualquier otro cargo mostrado. No des por incluido un servicio que la ficha no especifica.</p>
+          <a href="https://www.cafans.com">Abrir el catálogo actual ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-layout" aria-labelledby="faq-title">
+      <div>
+        <div class="eyebrow">Respuestas directas</div>
+        <h2 id="faq-title">Antes de continuar</h2>
+      </div>
+      <div>
+        <details open>
+          <summary>¿Qué es una DgoBuy spreadsheet?</summary>
+          <p>El término se utiliza para buscar listas o directorios de enlaces relacionados con productos y compras mediante DgoBuy. Esta página es una guía editorial independiente: organiza categorías y consejos de comparación, y sus enlaces de catálogo llevan a cafans.com.</p>
+        </details>
+        <details>
+          <summary>¿Cómo uso esta guía DgoBuy spreadsheet?</summary>
+          <p>Elige una de las diez categorías, abre el catálogo correspondiente y compara el producto exacto. Revisa medidas, variante, fotografías y condiciones antes de decidir.</p>
+        </details>
+        <details>
+          <summary>¿Las imágenes confirman que un producto está disponible?</summary>
+          <p>No. Las imágenes son referencias editoriales de estilo. No confirman inventario, precio ni disponibilidad en cafans.com; comprueba esos datos en la ficha actual.</p>
+        </details>
+        <details>
+          <summary>¿Las fotos QC demuestran autenticidad?</summary>
+          <p>No. Ayudan a observar detalles visibles, pero no sustituyen una verificación de procedencia ni demuestran por sí solas la autenticidad, el material o la durabilidad.</p>
+        </details>
+        <details>
+          <summary>¿Puedo usar la misma talla en todas las marcas?</summary>
+          <p>No conviene asumirlo. Compara tus medidas con la tabla del modelo concreto y comprueba cómo se han tomado. Una misma letra o numeración puede corresponder a medidas diferentes.</p>
+        </details>
+        <details>
+          <summary>¿Esta página es oficial de DgoBuy o de las marcas?</summary>
+          <p>No. Es una guía independiente, sin afiliación oficial declarada con DgoBuy, Nike, Louis Vuitton, Gucci, Hermès o Dior. Las marcas pertenecen a sus respectivos titulares.</p>
+        </details>
+      </div>
+    </section>
+
+    <aside class="closing" aria-label="Continuar al catálogo">
+      <div>
+        <h2>Tu próxima selección empieza con una buena pregunta.</h2>
+        <p>Abre el catálogo y comprueba el detalle que más importa para ti.</p>
+      </div>
+      <a class="button" href="https://www.cafans.com">Visitar cafans.com <span aria-hidden="true">↗</span></a>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a class="logo" href="https://www.cafans.com">cafans.com</a>
+      <p>DgoBuy spreadsheet · Guía editorial independiente en español. Este documento no procesa pedidos ni publica precios en tiempo real. Confirma los datos y las condiciones en la ficha de destino. Las imágenes externas pueden cambiar o dejar de estar disponibles.</p>
+    </div>
+  </footer>
+</body>
+</html>
